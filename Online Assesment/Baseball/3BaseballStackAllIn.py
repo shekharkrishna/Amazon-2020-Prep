@@ -2,43 +2,28 @@
 # Solution Similar : https://leetcode.com/problems/baseball-game/
 # (?<=\s|^)\d+(?=\s|$)
 
+# this is a way better solution that I initially thought about it. Catch : Didnt know sum existed for list queue python thing
 
 def baseball_scorekeeping(blocks):
-   list_stack = []
+    list_stack = [] # Creating list to implement stack
 
-    for block in blocks:
-        if block != 'X' and block != '+' and block != 'Z':        
-            current_score = int(block)            
-            list_stack_current_score.append(current_score)            
-            total_score += current_score
-            list_stack_total_score.append(total_score)           
-        elif block == 'X': 
-            current_score = 2 * list_stack_current_score[-1]
-            list_stack_current_score.append(current_score)
-            total_score += current_score
-            list_stack_total_score.append(total_score) 
+    for block in blocks:                   
+        if block == 'X': 
+            list_stack.append(2*list_stack[-1])            
         elif block == '+':
-            current_score = list_stack_current_score[-1] + list_stack_current_score[-2]
-            list_stack_current_score.append(current_score)
-            total_score += current_score
-            list_stack_total_score.append(total_score) 
+            list_stack.append(list_stack[-1] + list_stack[-2])            
         elif block == 'Z':
-            list_stack_current_score.pop()
-            current_score = list_stack_current_score[-1]     
-            list_stack_total_score.pop()      
-            total_score = list_stack_total_score[-1]
-            list_stack_total_score.append(total_score) 
+            list_stack.pop()                     
         else:
-            
+            list_stack.append(int(block))
 
-
-    return total_score
+    return sum(list_stack)
 
 # Driver Test Code
 
-# blocks = ["10", "20", "X", "+"]
-# total_score = baseball_scorekeeping(blocks)
-# print(total_score)
+blocks = ["10", "20", "X", "+"]
+total_score = baseball_scorekeeping(blocks)
+print(total_score)
 
 # Example 2:
 
