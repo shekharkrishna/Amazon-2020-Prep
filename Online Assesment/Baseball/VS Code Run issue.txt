@@ -1,0 +1,42 @@
+vs code is acting weird.
+
+when u run the code, even if everything is correct synthatically it gives "NameError: name 'baseball_scorekeeping' is not defined" for about 30 seconds 
+
+after approx 30 seconds, if u run again it runs as expected.
+
+even tried clear editor history, didnt work
+
+
+its making prorgamming like philosophy :-(
+
+Running] python -u "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\tempCodeRunnerFile.py"
+Traceback (most recent call last):
+  File "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\tempCodeRunnerFile.py", line 2, in <module>
+    total_score = baseball_scorekeeping(blocks)
+NameError: name 'baseball_scorekeeping' is not defined
+
+[Done] exited with code=1 in 0.107 seconds
+
+[Running] python -u "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\tempCodeRunnerFile.py"
+Traceback (most recent call last):
+  File "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\tempCodeRunnerFile.py", line 2, in <module>
+    total_score = baseball_scorekeeping(blocks)
+NameError: name 'baseball_scorekeeping' is not defined
+
+[Done] exited with code=1 in 0.113 seconds
+
+[Running] python -u "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\tempCodeRunnerFile.py"
+Traceback (most recent call last):
+  File "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\tempCodeRunnerFile.py", line 2, in <module>
+    total_score = baseball_scorekeeping(blocks)
+NameError: name 'baseball_scorekeeping' is not defined
+
+[Done] exited with code=1 in 0.123 seconds
+
+[Running] python -u "c:\GIT\Amazon 2020 Prep\Online Assesment\Baseball\1baseball.py"
+130
+80
+
+[Done] exited with code=0 in 0.128 seconds
+
+

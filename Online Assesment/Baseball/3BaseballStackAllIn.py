@@ -1,12 +1,10 @@
 # https://aonecode.com/amazon-online-assessment-baseball-scorekeeping
+# Solution Similar : https://leetcode.com/problems/baseball-game/
 # (?<=\s|^)\d+(?=\s|$)
 
 
 def baseball_scorekeeping(blocks):
-    list_stack_current_score = [] # to use as stack for scores manupulation
-    list_stack_total_score = []
-    total_score = 0    
-    current_score = 0
+   list_stack = []
 
     for block in blocks:
         if block != 'X' and block != '+' and block != 'Z':        
@@ -30,11 +28,11 @@ def baseball_scorekeeping(blocks):
             list_stack_total_score.pop()      
             total_score = list_stack_total_score[-1]
             list_stack_total_score.append(total_score) 
+        else:
+            
 
 
     return total_score
-
-
 
 # Driver Test Code
 
@@ -42,9 +40,16 @@ def baseball_scorekeeping(blocks):
 # total_score = baseball_scorekeeping(blocks)
 # print(total_score)
 
-
 # Example 2:
 
 blocks = ["10", "20", "Z", "30", "+"]
+total_score = baseball_scorekeeping(blocks)
+print(total_score)
+
+blocks = ['5', '-2', '4', 'Z', 'X', '9', '+', '+']
+total_score = baseball_scorekeeping(blocks)
+print(total_score)
+
+blocks = ['1', '2', '+', 'Z']
 total_score = baseball_scorekeeping(blocks)
 print(total_score)
