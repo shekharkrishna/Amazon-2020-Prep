@@ -1,4 +1,5 @@
 # https://aonecode.com/amazon-online-assessment-baseball-scorekeeping
+# Solution Similar : https://leetcode.com/problems/baseball-game/
 # (?<=\s|^)\d+(?=\s|$)
 
 
@@ -34,17 +35,22 @@ def baseball_scorekeeping(blocks):
 
     return total_score
 
-
-
 # Driver Test Code
 
 # blocks = ["10", "20", "X", "+"]
 # total_score = baseball_scorekeeping(blocks)
 # print(total_score)
 
-
 # Example 2:
 
 blocks = ["10", "20", "Z", "30", "+"]
+total_score = baseball_scorekeeping(blocks)
+print(total_score)
+
+blocks = ['5', '-2', '4', 'Z', 'X', '9', '+', '+']
+total_score = baseball_scorekeeping(blocks)
+print(total_score)
+
+blocks = ['1', '2', '+', 'Z']
 total_score = baseball_scorekeeping(blocks)
 print(total_score)
