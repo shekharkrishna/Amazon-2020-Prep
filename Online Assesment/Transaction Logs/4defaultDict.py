@@ -29,3 +29,9 @@ for key in word:
 print("Key count: ", dic.items())
 
 
+logs = ["88 99 200", "88 99 300", "99 32 100", "12 12 15"]
+
+
+# Cool Recource https://www.geeksforgeeks.org/defaultdict-in-python/
+
+
