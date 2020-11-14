@@ -14,6 +14,7 @@ def find_frauds(log_data, threshold):
 
 
 # Test
-logs = ["88 99 200", "88 99 300", "99 32 100", "12 12 15"]
-threshold = find_frauds(logs, 3)
+logs = [["88 99 200"], ["88 99 300"], ["99 32 100"], ["12 12 15"]]
+#logs = ["88 99 200", "88 99 300", "99 32 100", "12 12 15"]
+threshold = find_frauds(logs, 2)
 print(threshold)

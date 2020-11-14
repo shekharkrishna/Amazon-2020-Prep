@@ -28,10 +28,10 @@ def main():
         ["029323 345366 13"],
         ["38239 38239 23"]
     ]
-    print("The fradulent users are ", find_frauds(transactions1, 3))
+    print("The fradulent users are ", find_frauds(transactions1, 2))
 
-    logs = ["88 99 200", "88 99 300", "99 32 100", "12 12 15"]
-    print("The fradulent users are ", find_frauds(logs, 3))
+    logs = [["88 99 200"], ["88 99 300"], ["99 32 100"], ["12 12 15"]]
+    print("The fradulent users are ", find_frauds(logs, 2))
 
 
 main()
