@@ -10,6 +10,7 @@ def transactionThreashold(logs):
         log.split(' ')  # PJ: transaction is List which now has individual data(key) within one transaction. 
                                       # This has been possible with list's split by " " property.     
         for tran in set(log[:2]): # PJ: 1. to get last element ignored in loop Plus the set concept to avoid duplicate
+                                    # removed extra placeholder
             threasholdMap[tran] += 1   
 
     for key in threasholdMap:
