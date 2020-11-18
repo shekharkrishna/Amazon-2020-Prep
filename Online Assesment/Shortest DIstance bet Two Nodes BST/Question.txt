@@ -1,0 +1,16 @@
+https://www.geeksforgeeks.org/shortest-distance-between-two-nodes-in-bst/
+Given a Binary Search Tree and two keys in it. Find the distance between two nodes with given two keys.
+ It may be assumed that both keys exist in BST.
+Examples:
+
+Input:  Root of above tree
+         a = 3, b = 9
+Output: 4
+Distance between 3 and 9 in 
+above BST is 4.
+
+Input: Root of above tree
+         a = 9, b = 25
+Output: 3
+Distance between 9 and 25 in 
+above BST is 3.
