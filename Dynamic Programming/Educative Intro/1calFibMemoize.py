@@ -1,5 +1,6 @@
 def calculateFibonacci(n):
-    memoize = [-1 for x in range(n+1)]
+    memoize = [-1 for x in range(n)]
+    print(memoize)
        
     if (n < 2):
         return n        
