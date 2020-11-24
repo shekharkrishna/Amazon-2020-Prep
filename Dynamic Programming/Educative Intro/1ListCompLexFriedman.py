@@ -14,9 +14,15 @@ result = [x*x for x in nums if x % 2 == 0]
 print('''\n List Comprehension to compute multiplication of every element f(x*x) 
 for all items in the original list but with the condition = only even numbers(x % 2): ''', result)
 
-# using Map + filter
-print('\n Usin Lambda, Map and filter for above: ')
-print(nums)
-print('Multiplication of 2 : ', list(map(lambda x : x * x, nums)))
-print('Multiplication of 2 only even numbers: ', list(map(lambda x : x * x, 
-                                                    filter(lambda x : x % 2 == 0, nums))))
+# using Map + filter are in seperate file
+
+# List comprehension creates the list objects and computes all the elements in the list and stores the entire list
+# ini the memory.
+
+# Generator Expression stores just the iterable ojects and computes every elements in the list one at a time as it is
+# being queried.
+
+print('\n Generator Expression : Use when range is large/infinite')
+print('Using Generator Expression: ', list(x*x for x in nums))
+
+
