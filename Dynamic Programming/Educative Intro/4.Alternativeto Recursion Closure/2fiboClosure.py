@@ -31,6 +31,3 @@ for i in range (20):
 # this loop above is just like an engine for power to repetatively preform the 
 # main logic that is defined in inner function of outer function. 
 print('Seperation of logic and power is cool')
-
-
-

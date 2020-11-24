@@ -61,15 +61,3 @@ print('''Filter all that have key--> Name as value --> python'''
         ,list(filter(lambda x : x['Name'] == 'Python' , dict_a)))
 
 print("list() Converts the filer obj to a list")
-
-
-
-
-
-
-
-
-
-
-
-
