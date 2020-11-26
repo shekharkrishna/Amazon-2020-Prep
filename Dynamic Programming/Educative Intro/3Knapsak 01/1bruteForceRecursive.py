@@ -1,8 +1,11 @@
 # Knapsack Brute force is recursive: Yes
 # 01 means either we can pic the item or not
+
 # time complexity is exponential O(2^n), where ‘n’ represents the total number of items.
 # we will have a total of ‘31’ recursive calls – calculated through (2^n) + (2^n) - 1
-# The space complexity is O(n)
+
+# The space complexity is O(n)  our recursive algorithm works in a depth-first fashion, 
+# which means, we can’t have more than ‘n’ recursive calls on the call stack at any time.
 def solve_knapscak(profits, weights, capacity):
     return knapsack_recursive(profits, weights, capacity, 0)
 
